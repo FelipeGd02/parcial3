@@ -27,7 +27,7 @@ function RecipeDetail() {
   const [error, setError] = useState<string | null>(null);
 
   const [selectedDay, setSelectedDay] = useState<DayName>("Monday");
-  
+
   const [message, setMessage] = useState<string | null>(null);
 
   const { assignRecipe, plan } = usePlanner();
@@ -75,7 +75,7 @@ function RecipeDetail() {
     setTimeout(() => setMessage(null), 3000);
   }
 
-  if (loading) return <p>Cargando receta...</p>;
+  if (loading) return <p>Cargando </p>;
   if (error || !recipe) return <p>Error: {error}</p>;
 
   return (
